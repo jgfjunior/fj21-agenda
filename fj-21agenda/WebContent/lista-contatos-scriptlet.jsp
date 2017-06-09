@@ -23,7 +23,7 @@
 		<td><%=contato.getNome() %></td>
 		<td><%=contato.getEmail() %></td>
 		<td><%=contato.getEndereco() %></td>
-		<td><%=contato.getDataNascimento() %></td>
+		<td><%=contato.getDataNascimento().getTime() %></td>
 	</tr>
 	<%} %>
 </table>
