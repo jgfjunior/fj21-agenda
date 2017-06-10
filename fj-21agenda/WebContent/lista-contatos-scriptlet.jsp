@@ -20,6 +20,12 @@
 	for(Contato contato : contatos) {
 	%>
 	<tr>
+		<td>Nome</td>
+		<td>E-mail</td>
+		<td>Endereço</td>
+		<td>Data de Nascimento</td>
+	</tr>
+	<tr>
 		<td><%=contato.getNome() %></td>
 		<td><%=contato.getEmail() %></td>
 		<td><%=contato.getEndereco() %></td>
