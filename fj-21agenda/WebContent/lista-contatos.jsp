@@ -8,6 +8,7 @@
 <title>Lista de Contatos</title>
 </head>
 <body>
+<c:import url="cabecalho.jsp"></c:import>
 	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
 	
 	<table border = "1">
@@ -41,5 +42,6 @@
 
 		</c:forEach>
 	</table>
+<c:import url="rodape.jsp"></c:import>
 </body>
 </html>
