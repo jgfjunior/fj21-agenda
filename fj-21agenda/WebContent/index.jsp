@@ -10,7 +10,7 @@
 	<a href="/fj-21agenda/digita-idade.jsp">Digita Idade</a><br>
 	<a href="/fj-21agenda/adiciona-contato.jsp">Adiciona Contatos</a><br>
 	<a href="/fj-21agenda/lista-contatos-scriptlet.jsp">Lista Contatos</a><br>
-	<a href="/fj-21agenda/lista-contatos.jsp">Lista Contatos 2</a><br>
+	<a href="/fj-21agenda/mvc?logica=ListaContatoLogic">Lista Contatos 2</a><br>
 	<a href="/fj-21agenda/mvc?logica=PrimeiraLogica">Primeria Logica</a><br>
 <c:import url="rodape.jsp"></c:import>
 </body>

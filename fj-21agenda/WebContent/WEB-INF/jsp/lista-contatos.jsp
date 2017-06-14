@@ -9,8 +9,10 @@
 <title>Lista de Contatos</title>
 </head>
 <body>
-<c:import url="cabecalho.jsp"></c:import>
-	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
+<c:import url="/cabecalho.jsp"></c:import>
+
+<c:if test="${retorno} eq OK">Contato Removido com sucesso.</c:if>
+	 ${retorno} 
 	
 	<table border = "1">
 		<tr bgcolor="ffgggg">
@@ -23,7 +25,7 @@
 		</tr>
 
 
-		<c:forEach var="contato" items="${dao.lista}" varStatus="id">
+		<c:forEach var="contato" items="${contatos}" varStatus="id">
 
 
 		<tr bgcolor="#${id.count % 2 == 0 ? 'aaee99' : 'ffffff' }">
@@ -45,6 +47,6 @@
 
 		</c:forEach>
 	</table>
-<c:import url="rodape.jsp"></c:import>
+<c:import url="/rodape.jsp"></c:import>
 </body>
 </html>
