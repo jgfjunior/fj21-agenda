@@ -19,6 +19,7 @@
 			<td>Email</td>
 			<td>Endereço</td>
 			<td>Data de Nascimento</td>
+			<td>Remover</td>
 		</tr>
 
 
@@ -39,6 +40,7 @@
 </c:choose>
 			<td>${contato.endereco}</td>
 			<td><fmt:formatDate value="${contato.dataNascimento.time}" pattern="dd/MM/yyyy" /></td>
+			<td><a href="mvc?logica=RemoveContatoLogic&id=${contato.id}">Remover</a></td>
 		</tr>
 
 		</c:forEach>
